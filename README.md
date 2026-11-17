@@ -200,32 +200,6 @@ Grad-CAM uses the final DenseNet feature activation to produce a coarse importan
 
 The final trust report only includes boxed classes for images that are both positive in the ground-truth labels and above the model's prediction threshold. It is therefore a conditional localization summary, not a measure over every image or every box. Grad-CAM is an explanatory visualization and does not establish that the model has learned a medically valid reason for its prediction.
 
-## Troubleshooting
-
-### `Wrong notebook kernel` or `No DirectML GPU detected`
-
-The notebook is running in a non-3.10 kernel or a kernel without the DirectML plugin. Select **Python 3.10 (TensorFlow DirectML)**, restart the kernel, and rerun from the beginning. Confirm the TensorFlow version and GPU list with the PowerShell check above.
-
-### Dataset files not found
-
-Keep `Data_Entry_2017.csv`, `BBox_List_2017.csv`, and the `bbox_img/` directory beside the notebook, or update the notebook's `BASE_DIR` selection to the dataset location.
-
-### Missing Python module
-
-Run the notebook setup cell after selecting the correct kernel. In notebooks, `%pip` installs into the active kernel; a separate terminal's `pip` may target a different Python installation.
-
-### Desktop app says `Model file not found`
-
-The app looks for `final_model.keras` in the same folder as `app.py`. Run the notebook through the model save cell, or copy the intended saved model into that folder. The app does not train a model when it starts.
-
-### Desktop app fails to import TensorFlow or OpenCV
-
-Start it with `.\.venv310\Scripts\python.exe app.py` so it uses the environment described above. Install the listed packages into that same environment if they are missing. Avoid installing a second TensorFlow distribution alongside the DirectML packages.
-
-### Desktop app window does not open
-
-Run the command from an interactive Windows desktop session. Tkinter needs a graphical desktop; it will not open a window in a headless terminal or remote session without desktop access.
-
 ## Notes and limitations
 
 - Only locally available annotated images are used; the full NIH dataset is not included in this project directory.
