@@ -1,0 +1,24 @@
+# Local Python environments
+.venv/
+.venv310/
+
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# macOS metadata
+.DS_Store
+
+# Local editor and environment files
+.vscode/
+.idea/
+.env
+.env.*
+!.env.example
+
+# Large/local chest X-ray assets
+bbox_img/
+*.keras
+Data_Entry_2017.csv
+BBox_List_2017.csv
