@@ -14,6 +14,12 @@ If `final_model.keras` and the `.venv310` environment are already present, open 
 
 In the app, click **Choose X-ray**, select a PNG, JPEG, BMP, or TIFF file, and wait for the prediction and Grad-CAM overlay. The app expects `final_model.keras` beside `app.py`. If the environment or model is missing, follow the setup and training steps below first.
 
+## Example Grad-CAM output
+
+The app can display the original chest X-ray alongside Grad-CAM overlays for the model's predicted findings:
+
+![Example Grad-CAM output](assets/gradcam-preview.jpeg)
+
 ## Project contents
 
 | Path | Purpose |
