@@ -4,6 +4,9 @@ This project is a Jupyter notebook that trains and evaluates a multi-label chest
 
 The project is for coursework and experimentation. Its predictions and localization scores are not intended for clinical use.
 
+![Uploading WhatsApp Image 2026-11-17 at 1.30.42 PM.jpeg…]()
+
+
 ## Quick start: run the desktop app
 
 If `final_model.keras` and the `.venv310` environment are already present, open PowerShell in this project folder and run:
